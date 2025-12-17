@@ -1,8 +1,6 @@
 ---
-title: "Content Placeholder"
-build:
-  render: never
-  list: never
-  publishResources: false
+title: "LSamp"
+toc: false
+comments: false
 ---
 
