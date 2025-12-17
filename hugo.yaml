@@ -1,0 +1,79 @@
+baseURL: https://lsamp.dev/
+languageCode: en-us
+title: LSamp
+enableRobotsTXT: true
+enableGitInfo: true
+
+outputs:
+  home: [html, llms]
+  page: [html]
+  section: [html, rss]
+
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    weight: 1
+    title: LSamp
+  pt-BR:
+    languageName: Portuguese (Brazil)
+    weight: 2
+    title: LSamp
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+menu:
+  main:
+    - name: Blog
+      pageRef: /blog
+      wheight: 1
+    - name: Projects
+      pageRef: /projects
+      wheight: 2
+    - name: Search
+      wheight: 3
+      params:
+        type: search
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: false
+
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+
+  blog:
+    list:
+      displayTags: true
+      sortBy: publishDate
+      sortOrder: desc
+      pagerSize: 20
+
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
+
+  footer:
+    displayCopyright: false
+    displayPoweredBy: true
+
+  analytics:
+    umami:
+      serverURL: https://cloud.umami.is
+      websiteID: b1bd3d89-06e5-404c-bef1-ebef7c711fd1
+
+  comments:
+    enable: false
+    type: giscus
+
+    giscus:
+      repo: LuizSSampaio/lsamp.dev
+      repoId: R_kgDOQqh6sA
+      category: Comments
+      categoryId: DIC_kwDOQqh6sM4Cz7La
+      inputPosition: top
