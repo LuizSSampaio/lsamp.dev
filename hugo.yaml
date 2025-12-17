@@ -63,11 +63,15 @@ params:
       sortBy: publishDate
       sortOrder: desc
       pagerSize: 20
+    article:
+      displayPagination: true
+
+  toc:
+    displayTags: true
 
   highlight:
     copy:
       enable: true
-      # hover | always
       display: hover
 
   footer:
