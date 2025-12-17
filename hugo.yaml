@@ -44,11 +44,8 @@ menu:
     - name: Blog
       pageRef: /blog
       wheight: 1
-    - name: Projects
-      pageRef: /projects
-      wheight: 2
     - name: Search
-      wheight: 3
+      wheight: 2
       params:
         type: search
 
@@ -83,7 +80,7 @@ params:
       websiteID: b1bd3d89-06e5-404c-bef1-ebef7c711fd1
 
   comments:
-    enable: false
+    enable: true
     type: giscus
 
     giscus:
