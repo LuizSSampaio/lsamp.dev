@@ -27,7 +27,7 @@ so for this series, we'll stick with the 2.0.
 
 Roles are a core part of the OAuth 2.0 Authorization Framework.
 They separate the workflow, isolating each part into a single responsibility.
-These are the rules implemented:
+These are the roles implemented:
 
 - **Resource Owner:** The user or entity that owns the resource
 and grants access to it.
