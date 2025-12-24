@@ -1,6 +1,5 @@
 ---
 date: '2025-12-22T17:29:52-03:00'
-draft: true
 title: 'OAuth2.0 from scratch: What is? - Part 0'
 authors:
   - name: Luiz Henrique
@@ -52,7 +51,7 @@ The *Authorization Server* may return an *Authorization Code* that can be exchan
 for an *Access Token*, some *Authorization Server* also issue a *Refresh Token*.
 
 - **Access Token:** Allow the client to access protected resources on behalf
-of the resource owner. Normally this token has a short lifespan
+of the resource owner. Normally this token has a short lifespan.
 - **Refresh Token:** Unlike *Access Token*, it normally has a longer expiration time
 and it's used to renew the client's *Access Token*.
 
