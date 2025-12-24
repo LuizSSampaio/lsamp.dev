@@ -69,7 +69,7 @@ params:
 
   analytics:
     umami:
-      serverURL: https://cloud.umami.is/script.js
+      serverURL: https://cloud.umami.is
       websiteID: b1bd3d89-06e5-404c-bef1-ebef7c711fd1
 
   comments:
