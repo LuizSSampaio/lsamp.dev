@@ -1,3 +1,5 @@
+.direnv/
+
 # Hugo output
 public/
 resources/
