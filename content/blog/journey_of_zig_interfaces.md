@@ -23,6 +23,27 @@ This post is written at **version 0.16**. {{< /callout >}}
 
 ## What Is an Interface?
 
+I'll not write about the basics of the interfaces and it concept, but it'll be
+about how it works and how it's implemented. When we need some level of
+polymorphism most of the time we can't define it at compile time. So the
+computer need some way to know that a method defined in Dog, for example the
+method speak() is the representative of the method speak() of the Animal class.
+To handle that we use a mechanism named
+[vtable](https://en.wikipedia.org/wiki/Virtual_method_table), with it we assign
+each method from the hypothetical Animal class to an index at a vtable in Dog
+class and the corresponding Dog's method pointer to the index.
+
+```mermaid
+classDiagram
+    Animal : +speak() void
+    Animal -- VTable
+    VTable : +speak() void
+    VTable *-- Dog : Implement
+    Dog : +speak() void
+    Dog : +sniff() void
+```
+
 ## Acknowledgment
 
 - [Wikipedia: vtable](https://en.wikipedia.org/wiki/Virtual_method_table)
+- [Stack Overflow: How are interfaces represented at a lower/assembly level?](https://stackoverflow.com/questions/60104481/how-are-interfaces-represented-at-a-lower-assembly-level)
